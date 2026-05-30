@@ -16,30 +16,59 @@
     font-family: "Poppins", sans-serif;
 }
 
-.top {
-    background: url(imagens/headerOficial.png);
+.cabecalho{
+    background-image: url(imagens/headerOficial.png);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 150px;
-    color: var(--Cor5);
-    gap: 10px;
-    border-radius: 0 0 15px 15px;
+    background-position: bottom;
+    padding: 30px 45px;
 }
 
-.top h1 {
-    font-size: 75px;
-    font-weight: 1000;
-    color: var(--Cor5);
+img{
+    width: 30vh;
 }
 
-.top h2 {
-    font-size: 25px;
-    color: var(--Cor5);
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.top span {
-    font-size: 15px;
+.links{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-right: 60vh;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;   
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+    transform: translate(-50%);
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+ul{
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    list-style-type: none;
 }
 
 .container {

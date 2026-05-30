@@ -70,10 +70,23 @@ main{
     padding: 20px;
 }
 
-.rodape{
-    background-color:#360f46;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+.bottom-all {
+    padding: 50px;
+    margin-top: 5rem;
+    background: url(imagens/fundo-com-acai.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.bottom-all h2 {
+    color: var(--Cor5);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bottom-all p {
+    color: var(--Cor5);
+    line-height: 1.9;
 }

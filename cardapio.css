@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cabecalho{
+    background-image: url(imagens/headerOficial.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 45px;
+}
+
+img{
+    width: 30vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-right: 60vh;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;   
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+    transform: translate(-50%);
+}
+
+.links a:hover::after{
+    width: 100%;
+}
+
+ul{
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottom-all {
+    padding: 50px;
+    margin-top: 5rem;
+    background: url(imagens/fundo-com-acai.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.bottom-all h2 {
+    color: var(--Cor5);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bottom-all p {
+    color: var(--Cor5);
+    line-height: 1.9;
+}
