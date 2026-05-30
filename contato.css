@@ -45,7 +45,9 @@ nav{
     text-decoration: none;
     display: inline-block;
     margin-left: 100px;
-    position: relative;   
+    position: relative;  
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .links a::after{
