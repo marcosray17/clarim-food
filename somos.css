@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Cor1: #2B0038;
+    --Cor2: #6A006F;
+    --Cor3: #FF2E93;
+    --Cor4: #FF5CB8;
+    --Cor5: #F8F5F7;
+    --Cor6: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.top {
+    background: url(imagens/headerOficial.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px;
+    color: var(--Cor5);
+    gap: 10px;
+    border-radius: 0 0 15px 15px;
+}
+
+.top h1 {
+    font-size: 75px;
+    font-weight: 1000;
+    color: var(--Cor5);
+}
+
+.top h2 {
+    font-size: 25px;
+    color: var(--Cor5);
+}
+
+.top span {
+    font-size: 15px;
+}
+
+.container {
+    background: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.card-text {
+    display: flex;
+    align-items: center;
+}
+
+.card-text h3 {
+    color: var(--Cor2);
+    font-size: 20px;
+
+}
+
+.texto {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto strong {
+    color: var(--Cor3);
+}
+
+h4 {
+    color: var(--Cor3);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.texto h3 {
+    color: var(--Cor2);
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+.texto span {
+    line-height: 1.8;
+}
+
+.texto a {
+    color: var(--Cor3);
+    border: 1px solid var(--Cor3);
+    border-radius: 15px;
+    padding: 15px;
+    width: 45%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.texto a:hover {
+    color: var(--Cor4);
+}
+
+.card-text img {
+    width: 550px;
+    height: 550px;
+    border: none;
+    border-radius: 15px;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.card-text p {
+    margin-left: 5rem;
+    line-height: 1.8;
+}
+
+.card-text b {
+    color: var(--Cor1);
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.values h3 {
+    color: var(--Cor3);
+}
+
+.values h1 {
+    color: var(--Cor2);
+}
+
+.topicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.topicos img {
+    width: 50px;
+
+}
+
+.subtopicos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: var(--Cor5);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.subtopicos-2 {
+    color: var(--Cor5);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.qualidade {
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px var(--Cor1);
+    background: url(imagens/fundo-roxo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paixao {
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px var(--Cor1);
+    background: url(imagens/fundo-roxo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inovacao {
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px var(--Cor1);
+    background: url(imagens/fundo-roxo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--Cor3);
+    color: var(--Cor5);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5rem;
+    width: 30%;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--Cor2);
+}
+
+.bottom-all {
+    padding: 50px;
+    margin-top: 5rem;
+    background: url(imagens/fundo-com-acai.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.bottom-all h2 {
+    color: var(--Cor5);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bottom-all p {
+    color: var(--Cor5);
+    line-height: 1.9;
+}
