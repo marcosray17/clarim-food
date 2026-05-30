@@ -8,8 +8,10 @@
 }
 
 .cabecalho{
-    background-color: #360f46;
-    padding: 15px 40px;
+    background-image: url(imagens/headerOficial.png);
+    background-size: cover;
+    background-position: bottom;
+    padding: 30px 45px;
 }
 
 img{
