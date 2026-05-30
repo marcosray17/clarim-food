@@ -214,6 +214,8 @@ h4 {
     margin-top: 5rem;
     width: 30%;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .botao:hover {
