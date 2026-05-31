@@ -84,7 +84,6 @@ main h2{
     font-size: 4rem;
     color:var(--Cor2);
     text-align: center;
-    text-transform: uppercase;
     margin-bottom: 4rem;
 }
 
@@ -119,13 +118,14 @@ h4{
 }
 
 .cardapio .box-container .box img{
-    height: 10rem;
+    height:12rem;
+    width: 15rem;
     align-items: center;
 }
 
 .cardapio .box-container .box h3{
     color:var(--Cor5);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
 }
 
@@ -153,8 +153,8 @@ h4{
 .bottom-all {
     padding: 50px;
     margin-top: 5rem;
-    background: url(imagens/fundo-com-acai.jpeg);
-    background-position: center;
+    background: url(imagens/headerOficial.png);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px 15px 0 0;
