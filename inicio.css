@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 
 :root {
     --Cor1: #2B0038;
@@ -55,7 +57,6 @@ nav{
     position: absolute;
     left: 50%;
     bottom: 1px;
-    width: 0;
     height: 2px;
     background-color: white;
     transition: 0.3s;
@@ -79,6 +80,33 @@ main{
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+
+.texto{
+    position: relative;
+    right: 60vh;
+    margin-bottom: 30vh;
+    color: var(--Cor1);
+}
+
+.texto h1{
+    width: 300px;
+    font-size: 60px;
+    line-height: 55px;
+}
+
+.texto span{
+    font-family: "Cookie", cursive;
+    font-size: 85px;
+    padding: 8px;
+}
+
+.texto p{
+    font-size: 14px;
+    width: 300px;
+    height: 10px;
+    margin-top: 10px;
+    line-height: 18px;
 }
 
 .bottom-all {
