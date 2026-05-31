@@ -106,6 +106,8 @@ h4{
 
 .cardapio .box-container{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1.5rem;
 }
 
