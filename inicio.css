@@ -85,14 +85,14 @@ main{
 
 .texto{
     position: relative;
-    right: 20vh;
+    right: 10vh;
     margin-bottom: 30vh;
     color: var(--Cor1);
 }
 
 .texto h1{
-    width: 300px;
-    font-size: 60px;
+    width: 400px;
+    font-size: 70px;
     line-height: 55px;
 }
 
