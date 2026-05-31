@@ -19,7 +19,7 @@
 .cabecalho{
     background-image: url(imagens/headerOficial.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     padding: 30px 45px;
 }
 
