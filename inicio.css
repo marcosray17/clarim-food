@@ -57,6 +57,7 @@ nav{
     position: absolute;
     left: 50%;
     bottom: 1px;
+    width: 0px;
     height: 2px;
     background-color: white;
     transition: 0.3s;
@@ -84,7 +85,7 @@ main{
 
 .texto{
     position: relative;
-    right: 60vh;
+    right: 20vh;
     margin-bottom: 30vh;
     color: var(--Cor1);
 }
@@ -107,6 +108,75 @@ main{
     height: 10px;
     margin-top: 10px;
     line-height: 18px;
+    color: var(--Cor6);
+}
+
+.acai{
+    width: 450px;
+    height: auto;
+    margin-bottom: 20vh;
+}
+
+.container{
+    background-color: #ffff;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px;
+    margin-bottom: 25vh;
+    position: relative;
+    right: 4vh;
+}
+
+.container h1{
+    color: var(--Cor1);
+    font-size: 20px;
+    position: relative;
+    left: 4.5vh;
+    top: 20px;
+}
+
+.container p{
+    color: #000000;
+    max-width: 18.2vh;
+    position: relative;
+    left: 5vh;
+    top: 30px;
+}
+
+.container .v1{
+    color: var(--Cor1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .v2{
+    color: var(--Cor3);
+    width: 200px;
+    font-size: 33px;
+    font-weight: 700;
+    display: block;
+    position: relative;
+    right: 5px;
+}
+
+.container .porcao{
+    width: 200px;
+    position: relative;
+    bottom: 20vh;
+    left: 25vh;
+    filter: drop-shadow(-4px 5px 5px);
+}
+
+.botao{
+    text-decoration: none;
+    background-color: var(--Cor1);
+    color: var(--Cor5);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    position: relative;
+    bottom: 33vh;
 }
 
 .bottom-all {
