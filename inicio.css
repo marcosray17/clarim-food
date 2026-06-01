@@ -103,12 +103,24 @@ main{
 }
 
 .texto p{
-    font-size: 14px;
+    font-size: 15px;
     width: 300px;
-    height: 10px;
+    height:10px;
     margin-top: 10px;
     line-height: 18px;
     color: var(--Cor6);
+}
+
+.texto a{
+    text-decoration: none;
+    background-color: var(--Cor3);
+    color: var(--Cor5);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    position: relative;
+    top: 65px;
+    transition: 0.3s
 }
 
 .acai{
@@ -144,13 +156,13 @@ main{
     top: 30px;
 }
 
-.container .v1{
+.container .v1 del{
     color: var(--Cor1);
     font-size: 20px;
     font-weight: 600;
 }
 
-.container .v2{
+.container .v2 {
     color: var(--Cor3);
     width: 200px;
     font-size: 33px;
