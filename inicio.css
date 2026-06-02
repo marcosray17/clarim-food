@@ -76,7 +76,7 @@ ul{
 }
 
 main{
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +189,16 @@ main{
     font-size: 15px;
     position: relative;
     bottom: 33vh;
+}
+
+.delicias{
+    text-align: center;
+    margin-top: -20vh;
+    margin-bottom: 25vh;
+}
+
+.delicias h2{
+    color: var(--Cor1);
 }
 
 .bottom-all {
