@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-
 
 :root {
     --Cor1: #2B0038;
@@ -23,75 +22,69 @@
     background-size: cover;
     background-position: top;
     padding: 30px 45px;
-}
-
-img{
-    width: 30vh;
-}
-
-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
+}
+
+.cabecalho img{
+    width: 230px;
 }
 
 .links{
-    display: flex;
-    gap: 60px;
-    list-style: none;
-    margin-right: 60vh;
+     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
-.links a {
+.links ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.links a{
     color: white;
     text-decoration: none;
-    display: inline-block;
-    margin-left: 100px;
-    position: relative;   
     font-size: 20px;
     font-weight: 600;
+    position: relative;
 }
 
 .links a::after{
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 1px;
-    width: 0px;
+    bottom: -4px;
+    width: 0;
     height: 2px;
     background-color: white;
-    transition: 0.3s;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+    transition: .3s;
 }
 
 .links a:hover::after{
     width: 100%;
 }
 
-ul{
-    font-size: 18px;
-    position: relative;
-    display: flex;
-    list-style-type: none;
-}
 
 main{
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 50px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
 }
 
 .texto{
-    position: relative;
-    right: 10vh;
-    margin-bottom: 30vh;
     color: var(--Cor1);
+    max-width: 450px;
 }
 
 .texto h1{
-    width: 400px;
     font-size: 70px;
     line-height: 55px;
 }
@@ -99,61 +92,62 @@ main{
 .texto span{
     font-family: "Cookie", cursive;
     font-size: 85px;
-    padding: 8px;
+    padding: 5px;
 }
 
 .texto p{
-    font-size: 15px;
-    width: 300px;
-    height:10px;
-    margin-top: 10px;
-    line-height: 18px;
-    color: var(--Cor6);
+    max-width: 300px;
+    margin-top: 15px;
+    line-height: 20px;
 }
 
 .texto a{
+    display: inline-block;
+    margin-top: 30px;
     text-decoration: none;
     background-color: var(--Cor3);
-    color: var(--Cor5);
+    color: white;
     padding: 12px 25px;
     border-radius: 25px;
-    font-size: 15px;
-    position: relative;
-    top: 65px;
-    transition: 0.3s
+
+    transition: .3s;
+}
+
+.texto a:hover{
+    transform: translateY(-3px);
 }
 
 .acai{
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: auto;
-    margin-bottom: 20vh;
+}
+
+.combo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
-    background-color: #ffff;
-    width: 40vh;
-    height: 40vh;
+     background-color: white;
+    width: 320px;
+    height: 320px;
     border-radius: 15px;
-    box-shadow: 0px 1px 5px;
-    margin-bottom: 25vh;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.2);
+    padding: 20px;
     position: relative;
-    right: 4vh;
+    overflow: visible;
 }
 
 .container h1{
     color: var(--Cor1);
-    font-size: 20px;
-    position: relative;
-    left: 4.5vh;
-    top: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .container p{
-    color: #000000;
-    max-width: 18.2vh;
-    position: relative;
-    left: 5vh;
-    top: 30px;
+    max-width: 180px;
 }
 
 .container .v1 del{
@@ -162,62 +156,111 @@ main{
     font-weight: 600;
 }
 
-.container .v2 {
-    color: var(--Cor3);
-    width: 200px;
-    font-size: 33px;
-    font-weight: 700;
+.container .v2{
     display: block;
-    position: relative;
-    right: 5px;
+    color: var(--Cor3);
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
 }
 
-.container .porcao{
-    width: 200px;
-    position: relative;
-    bottom: 20vh;
-    left: 25vh;
-    filter: drop-shadow(-4px 5px 5px);
+.porcao{
+    width: 220px;
+    position: absolute;
+    right: -70px;
+    bottom: 20px;
+    filter: drop-shadow(-4px 7px 5px rgba(0,0,0,.3));
 }
 
-.botao{
+.container .botao{
     text-decoration: none;
     background-color: var(--Cor1);
-    color: var(--Cor5);
-    padding: 12px 25px;
+    color: white;
+    padding: 10px 25px;
     border-radius: 25px;
-    font-size: 15px;
-    position: relative;
-    bottom: 33vh;
+    position: absolute;
+    bottom: 30px;
 }
 
+
 .delicias{
+    padding: 60px 20px;
     text-align: center;
-    margin-top: -20vh;
-    margin-bottom: 25vh;
 }
 
 .delicias h2{
     color: var(--Cor1);
+    margin-bottom: 40px;
 }
 
-.bottom-all {
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    height: 320px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+}
+
+.bottom-all{
     padding: 50px;
-    margin-top: 5rem;
-    background: url(imagens/headerOficial.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
+
+    background-image: url(imagens/headerOficial.png);
     background-size: cover;
+    background-position: center;
     border-radius: 15px 15px 0 0;
 }
 
-.bottom-all h2 {
-    color: var(--Cor5);
+.bottom-all h2{
+    color: white;
     font-size: 30px;
     font-weight: 800;
 }
 
-.bottom-all p {
-    color: var(--Cor5);
-    line-height: 1.9;
+.bottom-all p{
+    color: white;
+    line-height: 1.8;
+}
+
+.bottom-half{
+    margin-top: 25px;
+}
+
+.bottom-end{
+    margin-top: 30px;
+}
+
+@media (max-width: 900px){
+    .cabecalho{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .texto p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .texto h1{
+        font-size: 55px;
+    }
+
+    .texto span{
+        font-size: 70px;
+    }
 }

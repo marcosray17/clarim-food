@@ -21,45 +21,46 @@
     background-size: cover;
     background-position: top;
     padding: 30px 45px;
-}
-
-img{
-    width: 30vh;
-}
-
-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
+}
+
+.cabecalho img{
+    width: 230px;
 }
 
 .links{
-    display: flex;
-    gap: 60px;
-    list-style: none;
-    margin-right: 60vh;
+     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
-.links a {
+.links ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+
+.links a{
     color: white;
     text-decoration: none;
-    display: inline-block;
-    margin-left: 100px;
-    position: relative;  
     font-size: 20px;
     font-weight: 600;
+    position: relative;
 }
 
 .links a::after{
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 1px;
+    bottom: -4px;
     width: 0;
     height: 2px;
     background-color: white;
-    transition: 0.3s;
-    transform: translate(-50%);
+    transform: translateX(-50%);
+    transition: .3s;
 }
 
 .links a:hover::after{
