@@ -82,6 +82,8 @@ main{
 .texto{
     color: var(--Cor1);
     max-width: 450px;
+    position: relative;
+    left: 30px;
 }
 
 .texto h1{
@@ -109,7 +111,6 @@ main{
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
-
     transition: .3s;
 }
 
@@ -167,7 +168,7 @@ main{
 .porcao{
     width: 220px;
     position: absolute;
-    right: -70px;
+    right: -50px;
     bottom: 20px;
     filter: drop-shadow(-4px 7px 5px rgba(0,0,0,.3));
 }
@@ -184,13 +185,12 @@ main{
 
 
 .delicias{
-    padding: 60px 20px;
     text-align: center;
 }
 
 .delicias h2{
     color: var(--Cor1);
-    margin-bottom: 40px;
+    margin-top: -50px;
 }
 
 .cards{
@@ -198,19 +198,74 @@ main{
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .card{
-    width: 250px;
-    height: 320px;
+    position: relative;
+    width: 320px;
+    height: 135px;
     background: white;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0px 2px 8px rgba(0,0,0,.15);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    bottom: 20px;
+}
+
+.card:hover{
+    transform:translateY(-5px) ;
+}
+
+.card img{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    flex-shrink: 0;
+    left: -10px;
+}
+
+.card .combo{
+    width: 150px;
+    height: 150px; 
+    left: 15px;
+    clip-path: inset(5% 0% 0% 0%);
+}
+
+.card .sorvete{
+    width: 180px;
+    height: 180px;
+    bottom: -30px;
+    object-fit: contain;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 160px;
+    padding-right: 15px;
+}
+
+.txt h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Cor1);
+    margin: 3px 
+    
+}
+
+.txt p{
+    color: #444;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 .bottom-all{
     padding: 50px;
-
     background-image: url(imagens/headerOficial.png);
     background-size: cover;
     background-position: center;
