@@ -268,7 +268,7 @@ main{
     padding: 50px;
     background-image: url(imagens/headerOficial.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     border-radius: 15px 15px 0 0;
 }
 
