@@ -45,7 +45,7 @@
 }
 
 .links a{
-    color: white;
+    color: var(--Cor5);
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -59,7 +59,7 @@
     bottom: -4px;
     width: 0;
     height: 2px;
-    background-color: white;
+    background-color: var(--Cor5);
     transform: translateX(-50%);
     transition: .3s;
 }
@@ -75,8 +75,6 @@ ul{
     list-style-type: none;
 }
 
-
-
 .titulo-cardapio{
     text-align: center;
     padding: 40px 20px 10px;
@@ -90,7 +88,7 @@ ul{
 
 .titulo-cardapio p {
     font-size: 1rem;
-    color: #555;
+    color: var(--Cor1);
     margin-top: 4px;
 }
 main{
@@ -114,7 +112,7 @@ main{
 
 .box{
     background-color: var(--Cor5);
-    border: 1px solid #eee;
+    border: 1px solid var(--Cor5);
     border-radius: 16px;
     padding: 16px;
     display: flex;
@@ -183,8 +181,6 @@ main{
     background-color: var(--Cor4);
     transform: scale(1.03);
 }
-
-
 
 .bottom-all {
     padding: 50px;
