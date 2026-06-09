@@ -13,101 +13,121 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: var(--Cor1);
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cor5);
+     min-height: 100vh;
 }
 
 .container {
     display: flex;
-    align-items: center;
-    height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    overflow: hidden;
+    max-width: 1000px;
 }
 
-.header {
+.top {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    line-height: 1.6;
-}
-
-h1 {
-    font-size: 40px;
-    text-align: center;
-    color: var(--Cor5);
-}
-
-.title {
-    font-size: 35px;
-    color: var(--Cor3);
-    text-align: center;
-}
-
-span {
-    color: var(--Cor5);
-    font-size: 15px;
-    text-align: center;
-    overflow-wrap: break-word; 
-}
-
-.image {
-    width: 400px;
-    height: 300px;
-    border: none;
-    border-radius: 15px;
-    margin-top: 10px;
-}
-
-.form-login {
-    border: none;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35),
-        0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.card-login {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding: 80px 40px 40px 40px;
-}
-
-h2 {
-    font-size: 25px;
-    color: var(--Cor5);
-}
-
-.card-title {
-    font-size: 20px;
-    color: var(--Cor3);
-}
-
-label {
-    color: var(--Cor5);
-}
-
-input {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
+    text-align: center;
     flex: 1;
 }
 
-button {
-    padding: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: var(--Cor3);
-    color: var(--Cor5);
-    width: 100%;
-    cursor: pointer;
+.title1 {
+    color: var(--Cor1);
 }
 
-button:hover {
+.title2 {
+    color: var(--Cor3);
+}
+
+.imagem {
+    border-radius: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.login {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
     background-color: var(--Cor2);
+    border: 1px solid #e2e8f0;  
+    border-radius: 16px;      
+    padding: 45px 25px;             
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+     max-width: 300px;
+     padding: 50px 25px;
+    min-height: 480px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title1 {
+    font-size: 2.2rem;
+    color: var(--Cor1);
+    display: inline-block;
+}
+
+.card-title2 {
+    font-size: 2rem;
+    color: var(--Cor3);
+    display: inline-block;
+    
+}
+
+.form-login p {
+    color: var(--Cor5);
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+}
+
+.form-login label {
+    color: var(--Cor5);
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+}
+
+.form-login input {
+    margin-top: 1rem;
+    border: 2px solid transparent;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.botao {
+    background-color: var(--Cor3);
+    color: var(--Cor5);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.3rem;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    margin-top: 5rem;
+}
+
+.botao:hover {
+    background-color: var(--Cor1);
 }
