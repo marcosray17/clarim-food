@@ -20,14 +20,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Cor5);
-     min-height: 100vh;
+    background: url(imagens/fundo-login.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .container {
     display: flex;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     width: 100%;
     overflow: hidden;
     max-width: 1000px;
@@ -42,8 +43,14 @@ body {
     flex: 1;
 }
 
+.top p {
+    color: var(--Cor5);
+}
+
 .title1 {
     color: var(--Cor1);
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .title2 {
@@ -54,6 +61,11 @@ body {
     border-radius: 15px;
     margin-top: 20px;
     width: 100%;
+     transition: transform 0.3s ease;
+}
+
+.imagem:hover {
+transform: scale(1.05);
 }
 
 .login {
