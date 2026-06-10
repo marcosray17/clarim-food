@@ -82,6 +82,122 @@ main{
     padding: 20px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f1f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #5c1a6d;
+  margin-bottom: 10px;
+}
+
+.descricao {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #444;
+  font-size: 18px;
+}
+
+
+.conteudo {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formulario {
+  flex: 1;
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  color: #5c1a6d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #c21884, #7b1fa2);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.info {
+  flex: 0.5;
+}
+
+.item {
+  margin-bottom: 25px;
+  position: relative;
+  top: 100px;
+}
+
+.item h3 {
+  color: #5c1a6d;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+.item p {
+  color: #333;
+  font-size: 20px;
+}
+
+.item a {
+  color: #5c1a6d;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .bottom-all {
     padding: 50px;
     margin-top: 5rem;

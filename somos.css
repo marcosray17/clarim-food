@@ -17,7 +17,7 @@
 }
 
 
-.cabecalho{
+.cabecalho {
     background-image: url(imagens/headerOficial.png);
     background-size: cover;
     background-position: top;
@@ -27,24 +27,24 @@
     position: relative;
 }
 
-.cabecalho img{
+.cabecalho img {
     width: 230px;
 }
 
-.links{
-     position: absolute;
+.links {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 
 }
 
-.links ul{
+.links ul {
     display: flex;
     gap: 80px;
     list-style: none;
 }
 
-.links a{
+.links a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -52,7 +52,7 @@
     position: relative;
 }
 
-.links a::after{
+.links a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -64,11 +64,11 @@
     transition: .3s;
 }
 
-.links a:hover::after{
+.links a:hover::after {
     width: 100%;
 }
 
-ul{
+ul {
     font-size: 18px;
     position: relative;
     display: flex;
@@ -142,6 +142,11 @@ h4 {
     border-radius: 15px;
     margin-left: 5rem;
     margin-top: 5rem;
+    transition: transform 0.3s ease;
+}
+
+.card-text img:hover {
+    transform: scale(1.05);
 }
 
 .card-text p {
@@ -197,6 +202,7 @@ h4 {
     font-weight: 400;
     line-height: 1.8;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .qualidade {
@@ -208,6 +214,14 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex: 1;
+    margin-left: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualidade:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .paixao {
@@ -219,6 +233,13 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paixao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .inovacao {
@@ -230,6 +251,14 @@ h4 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex: 1;
+    margin-left: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inovacao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .button-card {
@@ -251,10 +280,12 @@ h4 {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .botao:hover {
     background-color: var(--Cor2);
+     transform: scale(1.05);
 }
 
 .bottom-all {

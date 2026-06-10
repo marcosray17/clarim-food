@@ -101,6 +101,7 @@ main{
     max-width: 300px;
     margin-top: 15px;
     line-height: 20px;
+    color: var(--Cor1);
 }
 
 .texto a{
@@ -116,6 +117,7 @@ main{
 
 .texto a:hover{
     transform: translateY(-3px);
+    background-color: var(--Cor1);
 }
 
 .acai{
@@ -173,7 +175,7 @@ main{
     filter: drop-shadow(-4px 7px 5px rgba(0,0,0,.3));
 }
 
-.container .botao{
+.botao{
     text-decoration: none;
     background-color: var(--Cor1);
     color: white;
@@ -181,8 +183,13 @@ main{
     border-radius: 25px;
     position: absolute;
     bottom: 30px;
+     transition: .3s;
 }
 
+.botao:hover {
+    transform: translateY(-3px);
+    background-color: var(--Cor3);
+}
 
 .delicias{
     text-align: center;
@@ -268,7 +275,7 @@ main{
     padding: 50px;
     background-image: url(imagens/headerOficial.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     border-radius: 15px 15px 0 0;
 }
 
