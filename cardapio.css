@@ -133,6 +133,7 @@ main{
     height: 200px;
     object-fit: contain;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .box-info{
@@ -149,6 +150,23 @@ main{
 }
 
 .box-info .descricao{
+    font-size: 0.78rem;
+    color: #888;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.detalhes {
+    display: none;
+}
+
+.detalhes p {
+     font-size: 0.78rem;
+    color: #888;
+    line-height: 1.4;
+}
+
+.mais-vendido {
     font-size: 0.78rem;
     color: #888;
     margin-bottom: 10px;
