@@ -1,211 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Inicial - Clarim Food</title>
-    <link rel="stylesheet" href="cardapio.css">
-</head>
+    <link rel="stylesheet" href="cardapio.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="cabecalho">
-            <img src="imagens/logo-clarimfood.png" alt="logo">
-            <div class="links">
-                <ul>
-                    <li> <a href="inicio.html">Início</a></li>
-                    <li> <a href="somos.html">Quem somos?</a></li>
-                    <li> <a href="cardapio.html">Cardápio</a></li>
-                    <li> <a href="contato.html">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-
+      <nav class="cabecalho">
+        <img src="imagens/logo-clarimfood.png" alt="logo" />
+        <div class="links">
+          <ul>
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="somos.html">Quem somos?</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="titulo-cardapio">
-        <h1>Cardápio</h1>
-        <p>Opções deliciosas para todos os gostos!</p>
+      <h1>Cardápio</h1>
+      <p>Opções deliciosas para todos os gostos!</p>
     </div>
 
     <main>
-        <section class="acai">
-            <h4 class="secao-titulo">Açaís</h4>
-            <div class="box-container">
+      <section class="acai">
+        <h4 class="secao-titulo">Açaís</h4>
+        <div class="box-container">
+          <div class="box">
+            <img
+              src="./imagens/acai1.png"
+              alt="Açaí Tradicional"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Açaí Tradicional</h3>
 
-                <div class="box">
-                    <img src="./imagens/acai1.png" alt="Açaí Tradicional" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Açaí Tradicional</h3>
-                        
-                        <div class="detalhes">
-                            <p>Tamanho: 300ml</p>
-                            <p class="descricao">Açaí puro com guaraná <br>+ 2 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto mais vendido</p>
-                        <div class="preco">R$ 16,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="./imagens/acai2.png" alt="Açaí Especial" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Açaí Especial</h3>
-                         <div class="detalhes">
-                            <p>Tamanho: 300ml</p>
-                            <p class="descricao">Açaí puro<br>+ 3 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto novo no mercado</p>
-                        <div class="preco">R$ 21,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="./imagens/acai3.png" alt="Açaí Premium" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Açaí Premium</h3>
-                    <div class="detalhes">
-                            <p>Tamanho: 300ml</p>
-                            <p class="descricao">Açaí puro com chocolate<br>+ 2 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto mais antigo no mercado</p>
-                        <div class="preco">R$ 26,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
+              <div class="detalhes">
+                <p>Tamanho: 300ml</p>
+                <p class="descricao">
+                  Açaí puro com guaraná <br />+ 2 complementos
+                </p>
+              </div>
+              <p class="mais-vendido">Produto mais vendido</p>
+              <div class="preco">R$ 16,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
             </div>
-        </section>
+          </div>
 
-        <br>
-        <br>
-        <section class="sovertes">
-            <h4 class="secao-titulo">Sorvetes</h4>
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="./imagens/CopoDeSorvete.png" alt="Copo de sorvete" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Copo de sorvete</h3>
-                       <div class="detalhes">
-                            <p class="descricao">Sorvete mesclado<br>3 bolas</p>
-                        </div>
-                        <p class="mais-vendido">Produto mais refrescante</p>
-                        <div class="preco">R$ 12,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-
-                <div class="box">
-                    <img src="./imagens/Casquinha.png" alt="Casquinha" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Casquinha</h3>
-                       <div class="detalhes">
-                            <p class="descricao">Casquinha de sorvete<br>2 bolas</p>
-                        </div>
-                        <p class="mais-vendido">Sorvete mais vendido</p>
-                        <div class="preco">R$ 8,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-
-                </div>
-
-                <div class="box">
-                    <img src="./imagens/Taça.png" alt="Taça Especial" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Taça Especial</h3>
-                         <div class="detalhes">
-                            <p class="descricao">Sorvete com calda,frutas e toppings<br>
-                        </div>
-                        <p class="mais-vendido">Produto mais atual do mercado</p>
-                        <div class="preco">R$ 18,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
+          <div class="box">
+            <img
+              src="./imagens/acai2.png"
+              alt="Açaí Especial"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Açaí Especial</h3>
+              <div class="detalhes">
+                <p>Tamanho: 300ml</p>
+                <p class="descricao">Açaí puro<br />+ 3 complementos</p>
+              </div>
+              <p class="mais-vendido">Produto novo no mercado</p>
+              <div class="preco">R$ 21,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
             </div>
-        </section>
-        <br>
-        <br>
-        <section class="combos">
-            <h4 class="secao-titulo">Combos</h4>
+          </div>
 
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="./imagens/porcao-acai.png" alt="Porçao açai" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Combo Especial</h3>
-                       <div class="detalhes">
-                            <p>Tamanho: 200ml</p>
-                            <p class="descricao">Açaí duplo<br>+ 2 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto inovador do mercado</p>
-                        <div class="preco">R$ 29,90</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="./imagens/ComboMaster.png" alt="Combo Master" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Combo Master</h3>
-                         <div class="detalhes">
-                            <p>Tamanho: 200ml</p>
-                            <p class="descricao">3 Açaís<br>+ 3 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto delicioso do mercado</p>
-                        <div class="preco">R$ 42,80</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-                <div id="Combos" class="box">
-                    <img src="./imagens/ComboUltra.png" alt="Combo Ultra" onclick="mostrarDetalhes(this)">
-                    <div class="box-info">
-                        <h3>Combo Ultra</h3>
-                         <div class="detalhes">
-                            <p>Tamanho: 180ml</p>
-                            <p class="descricao">4 Açaís<br>+ 4 complementos</p>
-                        </div>
-                        <p class="mais-vendido">Produto sofisticado do mercado</p>
-                        <div class="preco"> R$ 54,50</div>
-                        <a href="#" class="btn" onclick="adicionarItem(this)">Adicionar</a>
-                    </div>
-                </div>
-
-
+          <div class="box">
+            <img
+              src="./imagens/acai3.png"
+              alt="Açaí Premium"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Açaí Premium</h3>
+              <div class="detalhes">
+                <p>Tamanho: 300ml</p>
+                <p class="descricao">
+                  Açaí puro com chocolate<br />+ 2 complementos
+                </p>
+              </div>
+              <p class="mais-vendido">Produto mais antigo no mercado</p>
+              <div class="preco">R$ 26,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <br />
+      <br />
+      <section class="sovertes">
+        <h4 class="secao-titulo">Sorvetes</h4>
+        <div class="box-container">
+          <div class="box">
+            <img
+              src="./imagens/CopoDeSorvete.png"
+              alt="Copo de sorvete"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Copo de sorvete</h3>
+              <div class="detalhes">
+                <p class="descricao">Sorvete mesclado<br />3 bolas</p>
+              </div>
+              <p class="mais-vendido">Produto mais refrescante</p>
+              <div class="preco">R$ 12,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
 
+          <div class="box">
+            <img
+              src="./imagens/Casquinha.png"
+              alt="Casquinha"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Casquinha</h3>
+              <div class="detalhes">
+                <p class="descricao">Casquinha de sorvete<br />2 bolas</p>
+              </div>
+              <p class="mais-vendido">Sorvete mais vendido</p>
+              <div class="preco">R$ 8,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="./imagens/Taça.png"
+              alt="Taça Especial"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Taça Especial</h3>
+              <div class="detalhes">
+                <p class="descricao">
+                  Sorvete com calda,frutas e toppings<br />
+                </p>
+              </div>
+              <p class="mais-vendido">Produto mais atual do mercado</p>
+              <div class="preco">R$ 18,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <section class="combos">
+        <h4 class="secao-titulo">Combos</h4>
+
+        <div class="box-container">
+          <div class="box">
+            <img
+              src="./imagens/porcao-acai.png"
+              alt="Porçao açai"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Combo Especial</h3>
+              <div class="detalhes">
+                <p>Tamanho: 200ml</p>
+                <p class="descricao">Açaí duplo<br />+ 2 complementos</p>
+              </div>
+              <p class="mais-vendido">Produto inovador do mercado</p>
+              <div class="preco">R$ 29,90</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              src="./imagens/ComboMaster.png"
+              alt="Combo Master"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Combo Master</h3>
+              <div class="detalhes">
+                <p>Tamanho: 200ml</p>
+                <p class="descricao">3 Açaís<br />+ 3 complementos</p>
+              </div>
+              <p class="mais-vendido">Produto delicioso do mercado</p>
+              <div class="preco">R$ 42,80</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
+
+          <div id="Combos" class="box">
+            <img
+              src="./imagens/ComboUltra.png"
+              alt="Combo Ultra"
+              onclick="mostrarDetalhes(this)"
+            />
+            <div class="box-info">
+              <h3>Combo Ultra</h3>
+              <div class="detalhes">
+                <p>Tamanho: 180ml</p>
+                <p class="descricao">4 Açaís<br />+ 4 complementos</p>
+              </div>
+              <p class="mais-vendido">Produto sofisticado do mercado</p>
+              <div class="preco">R$ 54,50</div>
+              <a href="#" class="btn" onclick="adicionarItem(this)"
+                >Adicionar</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bottom">
-        <div class="bottom-all">
-            <div class="bottom-top">
-                <h2>Clarim Food</h2>
-                <p>Melhor açai e sorvete da região.</p>
-            </div>
-
-            <div class="bottom-half">
-                <h2>Contato</h2>
-                <p>(85) 4002-8922</p>
-                <p>contato@clarimfood.com</p>
-            </div>
-            <div class="bottom-end">
-                <p class="copyright">
-                    © 2026 Clarim Food - Todos os direitos reservados.
-                </p>
-            </div>
-
+      <div class="bottom-all">
+        <div class="bottom-top">
+          <h2>Clarim Food</h2>
+          <p>Melhor açai e sorvete da região.</p>
         </div>
+
+        <div class="bottom-half">
+          <h2>Contato</h2>
+          <p>(85) 4002-8922</p>
+          <p>contato@clarimfood.com</p>
+        </div>
+        <div class="bottom-end">
+          <p class="copyright">
+            © 2026 Clarim Food - Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
     </footer>
-
+    <div id="mensagem" class="mensagem-carrinho">
+    ✅ Adicionado ao carrinho
+</div>
     <script src="cardapio.js"></script>
-</body>
-
+  </body>
 </html>

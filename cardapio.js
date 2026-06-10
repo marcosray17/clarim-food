@@ -1,31 +1,28 @@
 function adicionarItem(botao) {
-    if (botao.classList.contains("Adicionado")) {
-        botao.classList.remove("Adicionado");
+
+    event.preventDefault();
+
+    const mensagem = document.getElementById("mensagem");
+
+    if (botao.classList.contains("adicionado")) {
+
+        botao.classList.remove("adicionado");
         botao.textContent = "Adicionar";
-        botao.style.backgroundColor = "#FF2E93";
-    } else {
-        botao.classList.add("Adicionado");
-        botao.textContent = "Adicionado";
-        botao.style.backgroundColor = "green";
-    }
-}
 
-function mostrarDetalhes(imagem) {
-
-    const box = imagem.parentElement;
-
-    const detalhes = box.querySelector(".detalhes");
-    const maisVendido = box.querySelector(".mais-vendido");
-
-    if (detalhes.style.display === "block") {
-
-        detalhes.style.display = "none";
-        maisVendido.style.display = "block";
+        mensagem.textContent = "❌ Removido do carrinho";
 
     } else {
 
-        detalhes.style.display = "block";
-        maisVendido.style.display = "none";
+        botao.classList.add("adicionado");
+        botao.textContent = "✓ Adicionado";
+
+        mensagem.textContent = "✅ Adicionado ao carrinho";
 
     }
+
+    mensagem.classList.add("show");
+
+    setTimeout(() => {
+        mensagem.classList.remove("show");
+    }, 2000);
 }

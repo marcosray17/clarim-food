@@ -221,3 +221,31 @@ main {
     color: var(--Cor5);
     line-height: 1.9;
 }
+
+.btn{
+    transition: all .3s ease;
+}
+
+.btn.adicionado{
+    background-color: #28a745;
+}
+
+.mensagem-carrinho{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: .3s;
+    z-index: 9999;
+}
+
+.mensagem-carrinho.show{
+    opacity: 1;
+    transform: translateY(0);
+}

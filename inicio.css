@@ -326,3 +326,17 @@ main{
         font-size: 70px;
     }
 }
+
+
+
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
