@@ -83,7 +83,7 @@ main{
     color: var(--Cor1);
     max-width: 450px;
     position: relative;
-    left: 30px;
+    left: 15px;
 }
 
 .texto h1{
@@ -298,36 +298,101 @@ main{
     margin-top: 30px;
 }
 
-@media (max-width: 900px){
-    .cabecalho{
+@media (max-width: 768px) {
+  .cabecalho {
         flex-direction: column;
+        padding: 20px;
         gap: 20px;
     }
 
-    .links ul{
-        flex-wrap: wrap;
+    .cabecalho img {
+        width: 180px;
+    }
+
+    .links {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .links ul {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
-    .texto{
+    .links a {
+        font-size: 15px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 15px;
+    }
+
+    .texto {
+        max-width: 100%;
         text-align: center;
+        left: 0;
     }
 
-    .texto p{
-        margin-left: auto;
-        margin-right: auto;
+    .texto h1 {
+        font-size: 45px;
+        line-height: 1.1;
     }
 
-    .texto h1{
-        font-size: 55px;
+    .texto span {
+        font-size: 60px;
     }
 
-    .texto span{
-        font-size: 70px;
+    .texto p {
+        max-width: 100%;
     }
+
+    .acai {
+        max-width: 280px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .porcao {
+    width: 140px;
+    right: -70px;
+    bottom: 70px;
 }
 
+    .cards {
+        padding: 30px 15px;
+    }
 
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .card .sorvete {
+        width: 140px;
+        height: 140px;
+    }
+
+    .txt {
+        margin-left: 130px;
+    }
+
+    .bottom-all {
+        padding: 30px 20px;
+        text-align: center;
+    }
+}
 
 .reveal{
     opacity: 0;

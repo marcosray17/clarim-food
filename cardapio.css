@@ -249,3 +249,92 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
+
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+
+
+    .cabecalho {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .cabecalho img {
+        width: 180px;
+    }
+
+    .links {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .links ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .links a {
+        font-size: 15px;
+    }
+
+    .titulo-cardapio h1 {
+        font-size: 2.2rem;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .box-info {
+        text-align: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .bottom-all {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .bottom-all h2 {
+        font-size: 24px;
+    }
+
+    .bottom-all p {
+        font-size: 14px;
+    }
+
+    .mensagem-carrinho {
+        right: 10px;
+        left: 10px;
+        text-align: center;
+    }
+}

@@ -82,19 +82,6 @@ main{
     padding: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: #f4f1f4;
-}
-
 .container {
   max-width: 1100px;
   margin: auto;
@@ -217,4 +204,100 @@ button:hover {
 .bottom-all p {
     color: var(--Cor5);
     line-height: 1.9;
+}
+
+.reveal{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .cabecalho img {
+        width: 180px;
+    }
+
+    .links {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .links ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .links a {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulario,
+    .info {
+        width: 100%;
+    }
+
+    .item {
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .item h3 {
+        font-size: 22px;
+    }
+
+    .item p {
+        font-size: 16px;
+    }
+
+    .item a {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .bottom-all {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .bottom-all h2 {
+        font-size: 24px;
+    }
+
+    .bottom-all p {
+        font-size: 14px;
+    }
 }
