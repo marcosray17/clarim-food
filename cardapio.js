@@ -41,4 +41,24 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(reveal => {
     observer.observe(reveal);
-});
+}); 
+
+function mostrarDetalhes(imagem) {
+
+    const box = imagem.parentElement;
+
+    const detalhes = box.querySelector(".detalhes");
+    const maisVendido = box.querySelector(".mais-vendido");
+
+    if (detalhes.style.display === "block") {
+
+        detalhes.style.display = "none";
+        maisVendido.style.display = "block";
+
+    } else {
+
+        detalhes.style.display = "block";
+        maisVendido.style.display = "none";
+
+    }
+}

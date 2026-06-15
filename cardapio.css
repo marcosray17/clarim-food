@@ -338,3 +338,20 @@ main {
         text-align: center;
     }
 }
+
+.detalhes {
+    display: none;
+}
+
+.detalhes p {
+     font-size: 0.78rem;
+    color: #888;
+    line-height: 1.4;
+}
+
+.mais-vendido {
+    font-size: 0.78rem;
+    color: #888;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
